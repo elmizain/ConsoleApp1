@@ -1,10 +1,15 @@
-﻿namespace ConsoleApp1
+﻿using System;
+
+class Program
 {
-    internal class Program
+    static void PrintWelcomeMessage()
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        Console.WriteLine("Welcome to the Library!");
     }
-}
+
+    static void Main()
+    {
+        PrintWelcomeMessage();
+    }
+} 
+
