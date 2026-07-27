@@ -68,25 +68,46 @@ class Program
     //}
     //=========================================
 
-    static void ReplaceArray(ref double[] prices)
+    //static void ReplaceArray(ref double[] prices)
+    //{
+    //    prices = new double[] { 10.0, 12.5, 15.0 };
+    //}
+
+    //static void Main()
+    //{
+    //    double[] prices = { 25.5, 40.0 };
+
+    //    ReplaceArray(ref prices);
+
+    //    Console.WriteLine(prices.Length);
+    //}
+    //=============================================
+
+    static bool TryGetPrice(string title, out double price)
     {
-        prices = new double[] { 10.0, 12.5, 15.0 };
+        if (title == "Clean Code")
+        {
+            price = 25.5;
+            return true;
+        }
+
+        price = 0;
+        return false;
     }
 
     static void Main()
     {
-        double[] prices = { 25.5, 40.0 };
+        double price;
 
-        ReplaceArray(ref prices);
-
-        Console.WriteLine(prices.Length);
+        if (TryGetPrice("Clean Code", out price))
+        {
+            Console.WriteLine(price);
+        }
     }
-
-
-
-
-
-
 }
+
+
+
+
 
 
