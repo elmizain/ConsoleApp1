@@ -105,6 +105,18 @@ class Program
     //    }
     //}
     //=======================================
+    //static void PrintBookInfo(string title, int pages = 300)
+    //{
+    //    Console.WriteLine($"Title: {title}, Pages: {pages}");
+    //}
+
+    //static void Main()
+    //{
+    //    PrintBookInfo("Clean Code");
+    //    PrintBookInfo("The Pragmatic Programmer", 450);
+    //}
+    //=====================================
+
     static void PrintBookInfo(string title, int pages = 300)
     {
         Console.WriteLine($"Title: {title}, Pages: {pages}");
@@ -112,12 +124,8 @@ class Program
 
     static void Main()
     {
-        PrintBookInfo("Clean Code");
-        PrintBookInfo("The Pragmatic Programmer", 450);
+        PrintBookInfo(pages: 500, title: "Clean Code");
     }
-
-
-
 
 }
 
