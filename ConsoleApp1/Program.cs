@@ -83,27 +83,42 @@ class Program
     //}
     //=============================================
 
-    static bool TryGetPrice(string title, out double price)
-    {
-        if (title == "Clean Code")
-        {
-            price = 25.5;
-            return true;
-        }
+    //static bool TryGetPrice(string title, out double price)
+    //{
+    //    if (title == "Clean Code")
+    //    {
+    //        price = 25.5;
+    //        return true;
+    //    }
 
-        price = 0;
-        return false;
+    //    price = 0;
+    //    return false;
+    //}
+
+    //static void Main()
+    //{
+    //    double price;
+
+    //    if (TryGetPrice("Clean Code", out price))
+    //    {
+    //        Console.WriteLine(price);
+    //    }
+    //}
+    //=======================================
+    static void PrintBookInfo(string title, int pages = 300)
+    {
+        Console.WriteLine($"Title: {title}, Pages: {pages}");
     }
 
     static void Main()
     {
-        double price;
-
-        if (TryGetPrice("Clean Code", out price))
-        {
-            Console.WriteLine(price);
-        }
+        PrintBookInfo("Clean Code");
+        PrintBookInfo("The Pragmatic Programmer", 450);
     }
+
+
+
+
 }
 
 
