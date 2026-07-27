@@ -13,16 +13,32 @@ class Program
     //}
     //========================================
 
-    
-    static void PrintBookTitle(string title)
+
+    //static void PrintBookTitle(string title)
+    //{
+    //    Console.WriteLine("Book title: " + title);
+    //}
+
+    //static void Main()
+    //{
+    //    PrintBookTitle("Clean Code");
+    //}
+    //============================================
+
+
+    static void AddBonusPages(int pages)
     {
-        Console.WriteLine("Book title: " + title);
+        pages += 50;
     }
 
     static void Main()
     {
-        PrintBookTitle("Clean Code");
+        int pages = 400;
+        AddBonusPages(pages);
+        Console.WriteLine(pages);
     }
+
+
 }
 
 
