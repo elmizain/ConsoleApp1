@@ -117,15 +117,33 @@ class Program
     //}
     //=====================================
 
-    static void PrintBookInfo(string title, int pages = 300)
+    //static void PrintBookInfo(string title, int pages = 300)
+    //{
+    //    Console.WriteLine($"Title: {title}, Pages: {pages}");
+    //}
+
+    //static void Main()
+    //{
+    //    PrintBookInfo(pages: 500, title: "Clean Code");
+    //}
+    //======================================================
+    static void PrintAllTitles(params string[] titles)
     {
-        Console.WriteLine($"Title: {title}, Pages: {pages}");
+        foreach (string title in titles)
+        {
+            Console.WriteLine(title);
+        }
     }
 
     static void Main()
     {
-        PrintBookInfo(pages: 500, title: "Clean Code");
+        PrintAllTitles(
+            "Clean Code",
+            "C# in Depth",
+            "The Pragmatic Programmer"
+        );
     }
+
 }
 
 
