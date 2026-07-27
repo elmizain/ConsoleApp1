@@ -53,19 +53,37 @@ class Program
     //}
     //=========================================
 
-    static void AddBonusPagesByRef(ref int pages)
+    //static void AddBonusPagesByRef(ref int pages)
+    //{
+    //    pages += 50;
+    //}
+
+    //static void Main()
+    //{
+    //    int pages = 400;
+
+    //    AddBonusPagesByRef(ref pages);
+
+    //    Console.WriteLine(pages);
+    //}
+    //=========================================
+
+    static void ReplaceArray(ref double[] prices)
     {
-        pages += 50;
+        prices = new double[] { 10.0, 12.5, 15.0 };
     }
 
     static void Main()
     {
-        int pages = 400;
+        double[] prices = { 25.5, 40.0 };
 
-        AddBonusPagesByRef(ref pages);
+        ReplaceArray(ref prices);
 
-        Console.WriteLine(pages);
+        Console.WriteLine(prices.Length);
     }
+
+
+
 
 
 
