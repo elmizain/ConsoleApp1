@@ -38,19 +38,37 @@ class Program
     //    Console.WriteLine(pages);
     //}
     //===========================================
-    static void ApplyDiscount(double[] prices)
+    //static void ApplyDiscount(double[] prices)
+    //{
+    //    prices[0] -= 5;
+    //}
+
+    //static void Main()
+    //{
+    //    double[] prices = { 25.5, 40.0 };
+
+    //    ApplyDiscount(prices);
+
+    //    Console.WriteLine(prices[0]);
+    //}
+    //=========================================
+
+    static void AddBonusPagesByRef(ref int pages)
     {
-        prices[0] -= 5;
+        pages += 50;
     }
 
     static void Main()
     {
-        double[] prices = { 25.5, 40.0 };
+        int pages = 400;
 
-        ApplyDiscount(prices);
+        AddBonusPagesByRef(ref pages);
 
-        Console.WriteLine(prices[0]);
+        Console.WriteLine(pages);
     }
+
+
+
 }
 
 
