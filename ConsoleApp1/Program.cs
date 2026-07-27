@@ -26,19 +26,31 @@ class Program
     //============================================
 
 
-    static void AddBonusPages(int pages)
+    //static void AddBonusPages(int pages)
+    //{
+    //    pages += 50;
+    //}
+
+    //static void Main()
+    //{
+    //    int pages = 400;
+    //    AddBonusPages(pages);
+    //    Console.WriteLine(pages);
+    //}
+    //===========================================
+    static void ApplyDiscount(double[] prices)
     {
-        pages += 50;
+        prices[0] -= 5;
     }
 
     static void Main()
     {
-        int pages = 400;
-        AddBonusPages(pages);
-        Console.WriteLine(pages);
+        double[] prices = { 25.5, 40.0 };
+
+        ApplyDiscount(prices);
+
+        Console.WriteLine(prices[0]);
     }
-
-
 }
 
 
