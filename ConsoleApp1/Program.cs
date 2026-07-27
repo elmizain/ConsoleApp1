@@ -126,7 +126,6 @@ class Program
     {
         PrintBookInfo(pages: 500, title: "Clean Code");
     }
-
 }
 
 
